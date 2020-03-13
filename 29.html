@@ -7,18 +7,28 @@
     <style>
         p{
             background-color: #ccc;
+            position: relative;
         }
         p::before{
-            content: 'before';
+            position: absolute;
+            font-size: 50px;
+            top: -8px;
+            left: -19px;
+            content: '「';
             color: red;
+            text-indent: -8px;
         }
-        P::after{
-            content: 'after';
+        p::after{
+            position: absolute;
+            font-size: 50px;
+            right: -27px;
+            bottom: -5px;
+            content: '」';
             color: red;
         }
     </style>
 </head>
 <body>
-    <p>abc</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur asperiores nisi magni ex eos maxime molestiae maiores eius esse architecto error laboriosam debitis doloremque, quia sunt est veniam. Rerum, cum.it. Tenetur asperiores nisi magni ex eos maxime molestiae maiores eius esse architecto error laboriosait. Tenetur asperiores nisi magni ex eos maxime molestiae maiores eius esse architecto error laboriosait. Tenetur asperiores nisi magni ex eos maxime molestiae maiores eius esse architecto error laboriosait. Tenetur asperiores nisi magni ex eos maxime molestiae maiores eius esse architecto error laboriosait. Tenetur asperiores nisi magni ex eos maxime molestiae maiores eius esse architecto error laboriosa</p>
 </body>
 </html>
