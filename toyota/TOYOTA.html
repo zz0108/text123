@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toyota</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .warp {
+            width: 800px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .item {
+            width: 100%;
+            margin: 500px 0;
+            display: flex;
+            position: relative;
+        }
+        
+        .twoimg {
+            position: absolute;
+            top: -137px;
+            left: -80px;
+        }
+        
+        .warp>.item:nth-child(even)>.twoimg {
+            left: 580px;
+        }
+        
+        .thimg {
+            position: absolute;
+            left: 0;
+            top: 400px;
+        }
+        
+        .warp>.item:nth-child(even)>.thimg {
+            left: 250px;
+        }
+        
+        .bccl {
+            width: 440px;
+            height: 300px;
+            background-color: #eee;
+            position: absolute;
+            right: -80px;
+            top: -100px;
+        }
+        
+        .warp>.item:nth-child(even)>.bccl {
+            top: -75px;
+            right: 100px;
+        }
+        
+        .firstimg {
+            position: absolute;
+            right: 0;
+        }
+        
+        .warp>.item:nth-child(even)>.firstimg {
+            left: 0;
+        }
+        
+        .foimg {
+            position: absolute;
+            right: -20px;
+            top: 210px;
+        }
+        
+        .warp>.item:nth-child(even)>.foimg {
+            left: -10px;
+        }
+        
+        .floor {
+            height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <div class="item">
+            <div class="bccl"></div>
+            <img class="firstimg" src="01car.png" alt="car">
+            <img class="twoimg" src="01f.png" alt="01f">
+            <img class="thimg" src="012n.png" alt="012n">
+            <img class="foimg" src="yu.png" alt="yu">
+        </div>
+        <div class="item">
+            <div class="bccl"></div>
+            <img class="firstimg" src="asset61.png" alt="car">
+            <img class="twoimg" src="asset 62.png" alt="01f">
+            <img class="thimg" src="asset 63.png" alt="012n">
+            <img class="foimg" src="yu.png" alt="yu">
+        </div>
+        <div class="item">
+            <div class="bccl"></div>
+            <img class="firstimg" src="asset 64.png" alt="car">
+            <img class="twoimg" src="asset 65.png" alt="01f">
+            <img class="thimg" src="asset 66.png" alt="012n">
+            <img class="foimg" src="yu.png" alt="yu">
+        </div>
+        <div class="item">
+            <div class="bccl"></div>
+            <img class="firstimg" src="asset 67.png" alt="car">
+            <img class="twoimg" src="asset 68.png" alt="01f">
+            <img class="thimg" src="asset 69.png" alt="012n">
+            <img class="foimg" src="yu.png" alt="yu">
+        </div>
+        <div class="item">
+            <div class="bccl"></div>
+            <img class="firstimg" src="asset 70.png" alt="car">
+            <img class="twoimg" src="asset 71.png" alt="01f">
+            <img class="thimg" src="asset 72.png" alt="012n">
+            <img class="foimg" src="yu.png" alt="yu">
+        </div>
+
+    </div>
+    <footer>
+        <div class="floor"></div>
+    </footer>
+</body>
+
+</html>
