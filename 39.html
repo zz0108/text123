@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .wrap {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .item {
+            margin: 10px;
+            height: 200px;
+            background-color: #eee;
+        }
+        /* @media 媒體類型 and 條件一 and 條件二{
+            設定內容
+        } */
+        
+        @media screen and (min-width: 375px) {
+            .item {
+                width: 44.66666666666667%;
+                margin: 10px 2.666666666666667%;
+            }
+        }
+        
+        @media screen and (min-width: 768px) {
+            .item {
+                width: 30.72916666666667%;
+                margin: 10px 1.3020833333333333%;
+            }
+        }
+        
+        @media screen and (min-width: 992px) {
+            .item {
+                width: 23.046875%;
+                margin: 10px 0.9765625%;
+            }
+        }
+        
+        @media screen and (min-width: 1200px) {
+            .item {
+                width: 15%;
+                margin: 10px 0.8333333333333333%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>
