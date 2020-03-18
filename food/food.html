@@ -62,7 +62,7 @@
             padding: 60px 0;
             display: flex;
             top: 0;
-            z-index: 1;
+            z-index: 2;
             background-color: #fff;
         }
         
@@ -139,7 +139,8 @@
             height: 25px;
             background-color: #000;
             border-radius: 3px;
-            padding: 10px;
+            padding: 10px 15px;
+            padding-right: 10px;
             line-height: 1.5;
             color: white;
         }
@@ -271,6 +272,221 @@
             font-size: 20px;
             border-bottom: 20px;
         }
+        
+        .sell {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        
+        .sell-commodity {
+            background-color: #eee;
+            margin: 10px;
+        }
+        
+        .sell-a {
+            background-color: #fff;
+        }
+        
+        .sell-a a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .sell-p {
+            background-color: #fff;
+            font-size: 20px;
+        }
+        
+        .sell-commodity:nth-of-type(1) p {
+            display: inline;
+            white-space: nowrap;
+        }
+        
+        .sell-commodity:nth-of-type(4) p {
+            display: inline;
+            white-space: nowrap;
+        }
+        
+        .sell-commodity:nth-of-type(4) p:nth-of-type(1) {
+            text-decoration: line-through;
+            color: #ccc;
+        }
+        
+        .sell-commodity:nth-of-type(1) p:nth-of-type(1) {
+            text-decoration: line-through;
+            color: #ccc;
+        }
+        
+        .sell-button {
+            background-color: #fff;
+        }
+        
+        .sell-button button {
+            background-color: #fff;
+            font-size: 15px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10%;
+            outline: none;
+            border: 1px solid black;
+        }
+        
+        .sell-button button:hover {
+            background-color: #ff0;
+            transition: .5s;
+        }
+        
+        .firstimg {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        
+        .FreshBerries {
+            box-shadow: 2px 2px 2px 2px rgba(51, 51, 51, 0.5);
+            background-color: #fff;
+            width: 596px;
+            height: 470px;
+            text-align: center;
+            position: absolute;
+            left: 185px;
+        }
+        
+        .FreshBerries h1 {
+            padding-top: 130px;
+            padding-bottom: 30px;
+            border-radius: 20%;
+        }
+        
+        .FreshBerries a {
+            color: black;
+            background-color: yellow;
+            text-decoration: none;
+            border: 1px solid yellow;
+            padding: 10px 15px
+        }
+        
+        .FreshBerries a:hover {
+            background-color: black;
+            color: white;
+            transition: .5s;
+        }
+        
+        .FreshBerriesImg {
+            padding-top: 200px;
+            margin-left: 250px;
+        }
+        
+        .FreshBerries h1 {
+            font-size: 70px;
+        }
+        
+        .twosell {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .twosell-img {
+            margin-right: 30px;
+        }
+        
+        .two-sell-one {
+            margin: 75px 0;
+            display: flex;
+            line-height: 30px;
+        }
+        
+        .two-sell-two {
+            margin: 75px 0;
+            display: flex;
+            line-height: 30px;
+        }
+        
+        .two-sell h3 {
+            text-align: center;
+            font-size: 35px;
+        }
+        
+        .two-sell-one-txt-one {
+            background-color: #eee;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 5px;
+        }
+        
+        .two-sell-one-txt-one a {
+            margin-top: 10px;
+            background-color: #fff;
+            color: black;
+            text-decoration: none;
+        }
+        
+        .two-sell-one-txt-two {
+            background-color: #eee;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 5px;
+        }
+        
+        .two-sell-one-txt-two a {
+            margin-top: 10px;
+            background-color: #fff;
+            color: black;
+            text-decoration: none;
+        }
+        
+        .threeimg {
+            text-align: center;
+        }
+        
+        .threeimg-box-two {
+            margin: 10px;
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .threeimgbox {
+            text-align: left;
+            background-color: #fff;
+            font-weight: 300;
+            width: 380px;
+        }
+        
+        .threeimgbox p {
+            font-size: 15px;
+            line-height: 20px;
+            color: #ccc;
+        }
+        
+        .threeimgbox a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .floor {
+            height: 400px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .floor-txt {
+            margin: 85px;
+            line-height: 45px;
+        }
+        
+        .floorBottom {
+            height: 50px;
+            background-color: #ffe605;
+            text-align: center;
+            line-height: 50px;
+        }
     </style>
 </head>
 
@@ -278,7 +494,7 @@
     <div class="top">
         <div class="topbox">
             <div class="Myaccount">
-                <i class="fas fa-user-alt"></i> My account
+                <i class="fas fa-user-alt"></i>My account
             </div>
             <div class="topmenu">
                 <div class="search"><i class="fas fa-search"></i></div>
@@ -376,17 +592,222 @@
         </div>
     </div>
 
-    <div class="sell"></div>
+    <div class="sell">
+        <figure class="sell-commodity">
+            <img src="asset 24.png" alt="">
+            <div class="sell-item">
+                <div class="sell-a">
+                    <a href="#">P28 Foods Formulated...</a>
+                </div>
+                <div class="sell-p">
+                    <p>$26.00</p>
+                    <p>$20.00</p>
+                </div>
+                <div class="sell-button">
+                    <button><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                    <button><i class="far fa-eye"></i></button>
+                    <button><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+        </figure>
+        <figure class="sell-commodity">
+            <img src="asset 26.png" alt="">
+            <div class="sell-item">
+                <div class="sell-a">
+                    <a href="#">P28 Foods Formulated...</a>
+                </div>
+                <div class="sell-p">
+                    <p>$29.00-$36.00</p>
+                </div>
+                <div class="sell-button">
+                    <button><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                    <button><i class="far fa-eye"></i></button>
+                    <button><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+        </figure>
+        <figure class="sell-commodity">
+            <img src="asset 28.png" alt="">
+            <div class="sell-item">
+                <div class="sell-a">
+                    <a href="#">KIND Nutts & Sprice</a>
+                </div>
+                <div class="sell-p">
+                    <p>$12.00-$30.00</p>
+                </div>
+                <div class="sell-button">
+                    <button><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                    <button><i class="far fa-eye"></i></button>
+                    <button><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+        </figure>
+        <figure class="sell-commodity">
+            <img src="asset 30.png" alt="">
+            <div class="sell-item">
+                <div class="sell-a">
+                    <a href="#">Justin's Nut Butter</a>
+                </div>
+                <div class="sell-p">
+                    <p>$33.00</p>
+                    <p>$22.00</p>
+                </div>
+                <div class="sell-button">
+                    <button><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                    <button><i class="far fa-eye"></i></button>
+                    <button><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+        </figure>
+    </div>
 
-    <div class="firstimg"></div>
+    <div class="firstimg">
+        <div class="FreshBerries">
+            <h1>20% OFF<br> Fresh Berries</h1>
+            <a href="#">SHOP NOW</a>
+        </div>
+        <div class="FreshBerriesImg">
+            <img src="asset 40.png" alt="">
+        </div>
+    </div>
 
-    <div class="twosell"></div>
+    <div class="twosell">
+        <div class="twosell-img">
+            <img src="asset 59.png" alt="">
+        </div>
+        <div class="two-sell">
+            <h3>
+                On Sale
+            </h3>
+            <div class="two-sell-one">
+                <div class="two-sell-one-txt-one">
+                    <img src="asset 26.png" alt="">
+                    <a href="#">P28 Foods Formulated...</a>
+                    <div class="sell-p">
+                        <p>$29.00 – $36.00</p>
+                    </div>
+                    <div class="sell-button">
+                        <button><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                        <button><i class="far fa-eye"></i></button>
+                        <button><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="two-sell-one-txt-two">
+                    <img src="asset 43.png" alt="">
+                    <a href="#">Nabisco Mini Nilla W...</a>
+                    <div class="sell-p">
+                        <p>$30.00</p>
+                    </div>
+                    <div class="sell-button">
+                        <button><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                        <button><i class="far fa-eye"></i></button>
+                        <button><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="two-sell-two">
+                <div class="two-sell-one-txt-one">
+                    <img src="asset 45.png" alt="">
+                    <a href="#">P28 Foods Formulated...</a>
+                    <div class="sell-p">
+                        <p>$12.00 – $30.00</p>
+                    </div>
+                    <div class="sell-button">
+                        <button><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                        <button><i class="far fa-eye"></i></button>
+                        <button><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="two-sell-one-txt-two">
+                    <img src="asset 47.png" alt="">
+                    <a href="#">Nabisco Mini Nilla W...</a>
+                    <div class="sell-p">
+                        <p>$23.00</p>
+                    </div>
+                    <div class="sell-button">
+                        <button><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                        <button><i class="far fa-eye"></i></button>
+                        <button><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div class="twoimg"></div>
+    <div class="threeimg">
+        <div class="threeimg-box-one">
+            <h2>
+                Featured Posts
+            </h2>
+        </div>
+        <div class="threeimg-box-two">
+            <div class="threeimgbox"><img src="asset 60.png" alt="">
+                <p>29 January</p>
+                <a href="#">12 Heavenly Fruits and Honey</a>
+                <p>Caffeine and sugar may give you an energy spike, but the crash that follows will leave you feeling even more tired than before. However, great...</p>
+            </div>
+            <div class="threeimgbox"><img src="asset 61.png" alt="">
+                <p>29 January</p>
+                <a href="#">The Great Start of Your Weight</a>
+                <p>Kids need energy for sports and play, so it’s important that they’re consuming a nutrient-dense snack about an hour before their activity that contains carbohydrates...</p>
+            </div>
+            <div class="threeimgbox"><img src="asset 62.png" alt="">
+                <p>29 January</p>
+                <a href="#">The Products that Help You Boost the Energy</a>
+                <p>Hello, my dears! My name is mary and here, in my blog, I want to share with you my findings and useful thoughts about making...</p>
+            </div>
+        </div>
+    </div>
 
-    <div class="floor"></div>
+    <div class="floor">
+        <div class="floor-txt">
+            <h3>
+                Information
+            </h3>
+            <p>Home</p>
+            <p>Services</p>
+            <p>Blog</p>
+            <p>About Us</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="floor-txt">
+            <h3>
+                My Account
+            </h3>
+            <p>My Account</p>
+            <p>Order History</p>
+            <p>Addresses</p>
+            <p>Wishlist</p>
+        </div>
+        <div class="floor-txt">
+            <h3>
+                Our Shop
+            </h3>
+            <p>
+                Address
+            </p>
+            <p>
+                4578 Marmora St, San Francisco D04 89GR
+            </p>
+            <p>
+                Phone
+            </p>
+            <p>
+                1-800-1234-567
+            </p>
+        </div>
+        <div class="floor-txt">
+            <h3>
+                Newsletter
+            </h3>
+            <p>
+                Join our mailing list
+            </p>
+            <input type="search">
+        </div>
+    </div>
 
-    <div class="floorBottom"></div>
+    <div class="floorBottom">©Healtly Food . Powered by Shopify</div>
 </body>
 
 </html>
