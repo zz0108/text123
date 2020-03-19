@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 400px;
+            background-image: url('https://picsum.photos/1200/400/?random=1');
+            background-size: cover;
+            background-position: center center;
+            padding-bottom: 30%;
+            position: relative;
+        }
+        
+        .box:hover {
+            background-image: url('https://picsum.photos/1200/400/?random=2');
+            transition: .5s;
+        }
+        
+        .txt {
+            position: absolute;
+            height: 100%;
+            left: 10%;
+            right: 10%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="txt">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus aperiam mollitia voluptatem eaque nulla assumenda suscipit fuga totam fugiat, vel architecto nostrum neque voluptatum. Assumenda aspernatur iure fugiat reprehenderit.</p>
+        </div>
+    </div>
+</body>
+
+</html>
