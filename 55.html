@@ -9,6 +9,29 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <style>
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: '>>';
+        }
+        
+        a {
+            color: orange;
+        }
+        
+        .breadcrumb-item.active {
+            color: green;
+        }
+        
+        .list-group-item.active {
+            background-color: #aaa;
+            border-color: #aaa;
+        }
+        
+        .list-group-item-action:focus,
+        .list-group-item-action:not(:first-child):hover {
+            background-color: pink;
+        }
+    </style>
     <title>Hello, world!</title>
 </head>
 
@@ -42,12 +65,61 @@
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 ml-auto">
+            <form class="form-inline my-2 mx-auto">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                      Cras justo odio
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                    <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                    <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maxime distinctio debitis amet voluptates maiores neque nihil earum totam id quia, optio iure unde nam rem est exercitationem saepe ab.</p>
+                <p>Sed beatae, ea vel quasi illo deserunt! Dolores quisquam doloremque consequatur blanditiis possimus fugit nam dolore, alias eligendi obcaecati at itaque, sunt explicabo natus, saepe magnam et deleniti? Nostrum, assumenda!</p>
+                <p>Voluptas at nisi cupiditate recusandae quae illo quo aut distinctio. Pariatur explicabo reiciendis magnam quaerat, omnis corporis et voluptatibus! Enim dolore voluptates dolor deleniti eum, quis ducimus corrupti sunt rerum.</p>
+                <p>Aperiam consequuntur beatae est, aliquam fugiat qui aut libero iste ipsum ab facilis culpa exercitationem blanditiis porro incidunt necessitatibus quibusdam tempore totam cumque aliquid enim impedit eos alias. Aperiam, laudantium?</p>
+                <p>Ad doloremque ducimus omnis dolor mollitia eligendi quis ipsam atque exercitationem modi dignissimos explicabo tempore vel a harum reprehenderit alias asperiores ab reiciendis unde impedit fugiat, commodi maiores. Sint, minus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas sint hic reiciendis, excepturi odio dicta ea quibusdam veritatis nisi minus culpa aspernatur voluptatum. Totam, sequi culpa tempora excepturi ullam laudantium.</p>
+                <p>Dolore expedita error, tempore perferendis magni quidem optio natus fuga fugit nulla autem qui, reiciendis in praesentium animi non doloribus cumque tenetur corrupti corporis itaque ipsa nesciunt cum! Molestiae, ducimus!</p>
+                <p>Amet nostrum omnis laboriosam accusamus ea laudantium eius dolores doloremque maiores quas dignissimos autem mollitia eveniet necessitatibus ducimus, sint eos aliquid atque nihil temporibus? Debitis veritatis pariatur quia et suscipit!</p>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
