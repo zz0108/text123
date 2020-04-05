@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .container {
+            width: 960px;
+            height: 400px;
+            background-color: #eee;
+            margin: auto;
+        }
+        
+        .item {
+            height: 400px;
+            font-size: 50px;
+            width: 960px;
+            flex-basis: 0;
+            display: flex;
+        }
+        
+        .item1 {
+            padding: 10px;
+            background-color: #f00;
+            flex: 1 0 0;
+        }
+        
+        .item2 {
+            padding: 10px;
+            background-color: #0f0;
+            flex: 1 0 0;
+        }
+        
+        .item3 {
+            padding: 10px;
+            background-color: #00f;
+            flex: 1 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+        </div>
+    </div>
+</body>
+
+</html>
